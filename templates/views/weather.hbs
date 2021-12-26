@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerLinks}}
+</head>
+<body>
+    {{>navbar}}
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="main_content text-center mt-3">
+                    <form class="temp_form">
+                    <input type="text" id="cityName" placeholder="Enter  City Name"autocomplete="off" class="btn" style="border:1px solid black">
+                    <input type="submit" value="Search" id="searchBtn" class="btn btn-info">
+                    </form>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="tempinfo text-center">
+        <div class="temp_top">
+            <p id="day">Tuesday</p>
+            <p id="date">13</p>
+        </div>
+        <div class="main_layer">
+            <p id="city_name"></p>
+        </div>
+        <div class="middle_layer data_hide">
+            <h1> <span id="temp">0</span><sup>0</sup>C  <span id="temp_status"><i class="bi bi-cloud ml-2"></i></span></h1>
+          
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    {{>footer}}
+    {{>footerLinks}}
+    <script src="js/main.js"></script>
+</body>
+</html>

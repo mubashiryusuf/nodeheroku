@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerLinks}}
+</head>
+<body>
+    {{>navbar}}
+    <div class="container">
+        <div class="row">
+            <div class="text-center col mt-4">
+                    <div class="img-error">
+                        <h1>404</h1>
+                        <p>Page not found</p>
+                        <p>The request URl is not found on this server</p>
+                    </div>
+                    <p >Welcome to OpenWeather App</p>
+                     <h3 class="mb-5 text-danger">{{errormsg}}</h3>
+                     <a href="/"><button class="btn btn-info"><i class="bi bi-chevron-left"></i>Go Back</button></a>
+                     
+            </div>
+            
+            
+        </div>
+    </div>
+    {{>footer}}
+    {{>footerLinks}}
+</body>
+</html>
